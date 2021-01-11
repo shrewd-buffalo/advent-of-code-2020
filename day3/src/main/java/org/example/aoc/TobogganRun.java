@@ -1,18 +1,18 @@
 /*
  * Copyright 2021 Applied Card Technologies Ltd
  */
-package org.example.aoc.day3a;
+package org.example.aoc;
 
 /**
  * @author pshipley
  */
-public class TobagganRun
+public class TobogganRun
 {
     private final String render;
     private final int treesHit;
     private final int openSpacesVisited;
 
-    public TobagganRun( final String render, final int treesHit, final int openSpacesVisited )
+    public TobogganRun( final String render, final int treesHit, final int openSpacesVisited )
     {
 
         this.render = render;

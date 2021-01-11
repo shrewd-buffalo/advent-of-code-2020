@@ -1,20 +1,20 @@
 /*
  * Copyright 2021 Applied Card Technologies Ltd
  */
-package org.example.aoc.day3b;
+package org.example.aoc;
 
 import java.util.LinkedList;
 
 /**
  * @author pshipley
  */
-public class TobagganRouteGenerator
+public class TobogganRouteGenerator
 {
     private final Slope slope;
     private final int maxLayers;
     private final LinkedList<Point> route = new LinkedList<>();
 
-    public TobagganRouteGenerator( final Slope slope, final int maxLayers )
+    public TobogganRouteGenerator( final Slope slope, final int maxLayers )
     {
         this.slope = slope;
         this.maxLayers = maxLayers;

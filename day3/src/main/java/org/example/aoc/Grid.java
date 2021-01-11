@@ -1,7 +1,7 @@
 /*
  * Copyright 2021 Applied Card Technologies Ltd
  */
-package org.example.aoc.day3b;
+package org.example.aoc;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -54,7 +54,7 @@ public class Grid
         return new Grid( world );
     }
 
-    public TobagganRun render( LinkedList<Point> tobagganRoute )
+    public TobogganRun render( LinkedList<Point> tobagganRoute )
     {
         final StringBuilder sb = new StringBuilder();
         final LinkedList<Point> route = new LinkedList<>( tobagganRoute );
@@ -95,7 +95,7 @@ public class Grid
 
         }
         sb.append( '\n' );
-        return new TobagganRun( sb.toString(), treesHit, openSpacesVisited );
+        return new TobogganRun( sb.toString(), treesHit, openSpacesVisited );
     }
 
     public int getWorldWidth()

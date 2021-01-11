@@ -1,21 +1,21 @@
 /*
  * Copyright 2021 Applied Card Technologies Ltd
  */
-package org.example.aoc.day3b;
+package org.example.aoc;
 
 import java.util.LinkedList;
 
 /**
  * @author pshipley
  */
-public class Tobaggan
+public class Toboggan
 {
     private LinkedList<Point> route;
-    private TobagganRouteGenerator tobagganRouteGenerator;
+    private TobogganRouteGenerator tobogganRouteGenerator;
 
-    public Tobaggan( final int maxLayers, final Slope slope )
+    public Toboggan( final int maxLayers, final Slope slope )
     {
-        tobagganRouteGenerator = new TobagganRouteGenerator( slope, maxLayers );
+        tobogganRouteGenerator = new TobogganRouteGenerator( slope, maxLayers );
     }
 
     /**
@@ -25,7 +25,7 @@ public class Tobaggan
     {
         if ( route == null )
         {
-            route = tobagganRouteGenerator.generateRoute();
+            route = tobogganRouteGenerator.generateRoute();
         }
         return route;
     }

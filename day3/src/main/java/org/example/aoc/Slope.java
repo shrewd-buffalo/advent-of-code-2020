@@ -1,7 +1,7 @@
 /*
  * Copyright 2021 Applied Card Technologies Ltd
  */
-package org.example.aoc.day3b;
+package org.example.aoc;
 
 /**
  * @author pshipley

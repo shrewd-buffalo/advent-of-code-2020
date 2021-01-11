@@ -6,7 +6,11 @@ package org.example.aoc.day3a;
 import java.util.List;
 import java.util.function.Supplier;
 import java.util.logging.Logger;
+import org.example.aoc.Grid;
+import org.example.aoc.Slope;
 import org.example.aoc.TestInputSupplier;
+import org.example.aoc.Toboggan;
+import org.example.aoc.TobogganRun;
 
 /**
  * Due to the local geology, trees in this area only grow on exact integer coordinates in a grid. You make a map
@@ -44,11 +48,11 @@ public class Day3a
 
         final Grid grid = Grid.parse( testInput );
         final Slope slope = new Slope( 3, 1 );
-        final Tobaggan tobaggan = new Tobaggan( grid.getWorldHeight(), slope );
+        final Toboggan toboggan = new Toboggan( grid.getWorldHeight(), slope );
 
-        final TobagganRun tobagganRun = grid.render( tobaggan.getRoute());
-        LOGGER.info( tobagganRun.getRender() );
-        LOGGER.info( tobagganRun.getTreesHit() + " trees hit" );
+        final TobogganRun tobogganRun = grid.render( toboggan.getRoute());
+        LOGGER.info( tobogganRun.getRender() );
+        LOGGER.info( tobogganRun.getTreesHit() + " trees hit" );
 
     }
 }
