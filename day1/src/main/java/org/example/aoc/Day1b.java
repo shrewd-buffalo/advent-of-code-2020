@@ -33,7 +33,6 @@ public class Day1b
     public void solve( final Supplier<List<String>> input )
     {
         final List<String> testInput = input.get();
-        LOGGER.fine( "Using input: " + testInput );
 
         final List<Integer> expenseList = testInput.stream().map( Integer::valueOf ).collect( Collectors.toList() );
 

@@ -35,7 +35,6 @@ public class Day2b
     public void solve( final Supplier<List<String>> inputSupplier )
     {
         final List<String> testInput = inputSupplier.get();
-        LOGGER.fine( "Using input: " + testInput );
 
         final List<String> badPasswords = new ArrayList<>();
         final List<String> goodPasswords = new ArrayList<>();
